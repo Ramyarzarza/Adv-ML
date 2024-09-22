@@ -1,4 +1,3 @@
 # Adv-ML
 Advance Machine Learning Assignment
-my name is ramyar
-zarza is my lastname
+This project concentrates on using RandomForest Model to detect phishing emails and using XAI techniques to improve accuracy.
