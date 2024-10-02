@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divMFZAUI1QMMK9T74"></div>
+        <div class="lime top_div" id="top_divM9LCNBKZL8TVVCN"></div>
         
         <script>
-        var top_div = d3.select('#top_divMFZAUI1QMMK9T74').classed('lime top_div', true);
+        var top_div = d3.select('#top_divM9LCNBKZL8TVVCN').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Safe Email", "Phishing Email"], [0.02, 0.98]);
+            var pp = new lime.PredictProba(pp_svg, ["Safe Email", "Phishing Email"], [0.07, 0.93]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Safe Email", "Phishing Email"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["save", 0.12695041679925478], ["low", 0.11145634151712452], ["prices", 0.0751022312182131], ["software", 0.059703543313361716], ["order", 0.0488277562890567], ["book", -0.02274903551568546], ["does", -0.02066082178032709], ["plan", -0.012083301822047518], ["let", -0.011815414283037373], ["term", -0.011788479248876063]], 1, exp_div);
+                exp.show([["save", 0.14484214859097364], ["low", 0.10176790354462512], ["prices", 0.06543391836104653], ["order", 0.061352409480631746], ["software", 0.04580338520229212], ["does", -0.04159904634320242], ["book", -0.022297668832909293], ["plan", -0.022057650473506014], ["break", -0.017701843203867428], ["family", 0.01605047723586103]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["save", 269, 0.12695041679925478], ["low", 20, 0.11145634151712452], ["prices", 24, 0.0751022312182131], ["software", 0, 0.059703543313361716], ["order", 230, 0.0488277562890567], ["book", 186, -0.02274903551568546], ["does", 315, -0.02066082178032709], ["plan", 197, -0.012083301822047518], ["let", 160, -0.011815414283037373], ["term", 58, -0.011788479248876063]], 1, "software incredibly low prices 86 lower drapery seventeen term represent sing feet wild break able build tail send subtract represent job cow student inch gave let warm family draw land book glass plan include sentence hat silent order wild famous long inch saw person save face especially sentence science certain does depend yes written carry", raw_div, true);
+            exp.show_raw_text([["save", 269, 0.14484214859097364], ["low", 20, 0.10176790354462512], ["prices", 24, 0.06543391836104653], ["order", 230, 0.061352409480631746], ["software", 0, 0.04580338520229212], ["does", 315, -0.04159904634320242], ["book", 186, -0.022297668832909293], ["plan", 197, -0.022057650473506014], ["break", 88, -0.017701843203867428], ["family", 169, 0.01605047723586103]], 1, "software incredibly low prices 86 lower drapery seventeen term represent sing feet wild break able build tail send subtract represent job cow student inch gave let warm family draw land book glass plan include sentence hat silent order wild famous long inch saw person save face especially sentence science certain does depend yes written carry", raw_div, true);
             
         </script>
         </body></html>
