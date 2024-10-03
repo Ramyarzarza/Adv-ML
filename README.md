@@ -26,7 +26,7 @@ explainer = LimeTextExplainer(class_names=['Safe Email', 'Phishing Email'], rand
 exp = explainer.explain_instance(cleaned_emails[idx], pipeline.predict_proba, num_features=10)
 exp.show_in_notebook(text=True)
 ```
-![Model Accuracy Results](./Result.jpg)
+![Model Accuracy Results](./img/LIME_on_text.jpg)
 
 ## Comparison and XAI Insights
 
@@ -34,7 +34,7 @@ exp.show_in_notebook(text=True)
 
 We also performed sensitivity analysis to see how the models react when a clearly phishing email is modified with positive words. The LSTM model's prediction before and after these changes was as follows:
 
-![Model Accuracy Results](./Result.jpg)
+![Model Accuracy Results](./img/Result.jpg)
 
 This analysis showed that while the LSTM model was relatively resilient to minor text changes, the Random Forest model with tokenized text was more prone to being fooled by added positive words.
 
