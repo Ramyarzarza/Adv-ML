@@ -26,21 +26,21 @@ explainer = LimeTextExplainer(class_names=['Safe Email', 'Phishing Email'], rand
 exp = explainer.explain_instance(cleaned_emails[idx], pipeline.predict_proba, num_features=10)
 exp.show_in_notebook(text=True)
 ```
-![Model Accuracy Results](./img/LIME_on_text.jpg)
+<img src="./img/LIME_on_text.jpg" alt="LIME_on_text" style="width: 100%;">
+
 
 ## Comparison and XAI Insights
 
 ### Model Sensitivity
 
-We also performed sensitivity analysis to see how the models react when a clearly phishing email is modified with positive words. The LSTM model's prediction before and after these changes was as follows:
+We also performed sensitivity analysis to see how the models react when a clearly phishing email is modified with positive words. The model's prediction before and after these changes was as follows:
 
-![Model Accuracy Results](./img/Result.jpg)
+<img src="./img/Result.jpg" alt="Model Accuracy Results" style="width: 50%;">
 
-This analysis showed that while the LSTM model was relatively resilient to minor text changes, the Random Forest model with tokenized text was more prone to being fooled by added positive words.
-
+This analysis demonstrated that while the LSTM model achieves higher accuracy, it is very sensitive to small changes in the data, whereas the Random Forest model and the embedding show greater stability in response to such changes. However, the key insight here is not about the models themselves, but rather how explainable AI (XAI) can help us better understand these models and address their weaknesses.
 ## Conclusion
 
-Explainable AI (XAI) techniques, such as LIME, provide invaluable insights into the inner workings of black-box models like LSTM and Random Forest. By leveraging these techniques, we can understand which features drive the model's decisions and identify weaknesses in the model. The ability to explain model predictions also aids in improving the robustness and accuracy of the system, particularly when dealing with adversarial modifications, such as adding non-phishing words to a phishing email.
+Explainable AI (XAI) techniques, such as LIME, provide invaluable insights into the inner workings of black-box models like LSTM and Random Forest. By leveraging these techniques, we can understand which features drive the model's decisions and identify weaknesses in the model. The ability to explain model predictions also aids in improving the robustness and accuracy of the system.
 
 ## References
 
