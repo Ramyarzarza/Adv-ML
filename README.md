@@ -16,7 +16,7 @@ In this project, we use LIME to explain the predictions of three models:
 
 ## Phishing Email Detection: Explainability and Model Sensitivity
 
-This project aims to detect phishing emails using different models: Random Forest with tokenization, Random Forest with embedding, and LSTM. We also investigate how Explainable AI (XAI) techniques, such as LIME, can help us understand and interpret the predictions of these models. In particular, we analyze how the models react when a clearly phishing email is modified with a few positive words added at the end.
+This project aims to detect phishing emails using different models: Random Forest with tokenization, Random Forest with embedding, and LSTM. We used the [Phishing Emails Dataset](https://www.kaggle.com/datasets/subhajournal/phishingemails) from Kaggle for this project. We also investigate how Explainable AI (XAI) techniques, such as LIME, can help us understand and interpret the predictions of these models. In particular, we analyze how the models react when a clearly phishing email is modified with a few positive words added at the end.
 
 
 
