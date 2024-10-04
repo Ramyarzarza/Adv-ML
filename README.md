@@ -38,6 +38,11 @@ We also performed sensitivity analysis to see how the models react when a clearl
 <img src="./img/Result.jpg" alt="Model Accuracy Results" style="width: 50%;">
 
 This analysis demonstrated that while the LSTM model achieves higher accuracy, it is very sensitive to small changes in the data, whereas the Random Forest model and the embedding show greater stability in response to such changes. However, the key insight here is not about the models themselves, but rather how explainable AI (XAI) can help us better understand these models and address their weaknesses.
+### XAI Insights
+This histogram reveals that words at the beginning and end of the text have a stronger influence compared to those in the middle. The higher bars at both ends indicate that these sections contribute more to the model's predictions, suggesting that the initial and concluding words carry more weight in determining the overall meaning or classification of the text.
+<img src="./img/output.png" alt="Model Accuracy Results" style="width: 50%;">
+
+
 ## Conclusion
 
 Explainable AI (XAI) techniques, such as LIME, provide invaluable insights into the inner workings of black-box models like LSTM and Random Forest. By leveraging these techniques, we can understand which features drive the model's decisions and identify weaknesses in the model. The ability to explain model predictions also aids in improving the robustness and accuracy of the system.
